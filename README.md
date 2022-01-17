@@ -18,3 +18,8 @@ git clone https://github.com/PureGero/youtube-video-watch-count.git
 4. Select the youtube-video-watch-count folder.
 
 5. The extension is now loaded, refresh youtube to see the watch counter.
+
+## Developing
+
+For those wishing to implement their own storage system, replace the
+code in `src/storage.js` with your own code.
