@@ -6,7 +6,12 @@ const tick = async () => {
   const video = getVideoId();
 
   if (video) {
-    await increaseValue(video, DELAY);
+    const playButton = document.querySelector('.ytp-play-button.ytp-button');
+
+    if (playButton && ~playButton.getAttribute('title').indexOf('Pause')) {
+      await increaseValue(video, DELAY);
+    }
+
     renderWatchCount(Math.ceil(await getValue(video) / getVideoLength() - 3/4));
   }
 };
