@@ -21,7 +21,7 @@ const getVideoId = () => {
 };
 
 const getVideoLength = () => {
-  return parseInt(document.querySelector('.ytp-progress-bar').getAttribute('aria-valuemax')) * 1000;
+  return Math.max(...[...document.querySelectorAll('.ytp-progress-bar')].map(a => parseInt(a.getAttribute('aria-valuemax') || 0))) * 1000;
 };
 
 const renderWatchCount = count => {
