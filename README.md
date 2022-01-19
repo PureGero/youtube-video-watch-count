@@ -3,6 +3,8 @@
 Chrome extension that counts the number of times you watch a youtube video and
 stores it onto your local storage.
 
+![The watch count gui changes](/images/watch-count-gui.png)
+
 ## Installing
 
 1. Download this repository with
