@@ -15,6 +15,7 @@ const tick = async () => {
     }
 
     renderWatchCount(Math.ceil(await getValue(video) / getVideoLength() - 3/4));
+  }
 };
 
 const getVideoId = () => {
